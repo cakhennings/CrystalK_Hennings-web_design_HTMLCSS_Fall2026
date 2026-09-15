@@ -1,0 +1,11 @@
+body{
+    line-height: 1.5;
+    font-family: Georgia;
+}
+h1, h2, p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+blockquote{
+    color:blue;
+}
