@@ -1,0 +1,6 @@
+body{color: blue;}
+a:link(unvisited) {color:darkmagenta;}
+a:visited {color:chocolate;}
+a:hover {color:darkgreen;}
+a:active{color:darkorange}
+a:focus {color:blueviolet;}
