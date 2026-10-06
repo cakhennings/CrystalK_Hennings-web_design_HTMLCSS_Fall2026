@@ -1,0 +1,36 @@
+     
+	 @media (prefers-color-scheme: dark) {}
+	 :root {
+            --primary-bg-color: #4AF;
+            --primary-font-color: #FFF;
+            --heading-color: yellow;
+			--bullets-color: orange;
+			--border-dress: blue, dashed, thick;
+			--primary-heading-color: maroon;			
+        }
+		
+        
+		body {
+            background-color: var(--primary-bg-color);
+        }
+		h1{color: var(--primary-heading-color);
+        }
+    
+        h2 {
+            color: var(--heading-color);
+        }
+    
+        p {
+            color: var(--primary-font-color);
+        }
+		ol{
+			background-color: var(--bullets-color);
+		}
+		ul{ 
+		background-color: var(--bullets-color);
+		}
+		
+		h2{ 
+		border: var(--border-dress);
+		}
+		
