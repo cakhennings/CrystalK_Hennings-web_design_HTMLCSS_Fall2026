@@ -1,0 +1,130 @@
+body {
+  
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: Times;
+  background-color: #585;
+}
+
+p {
+  line-height: 1.6;
+}
+
+settings-panel {
+	margin-top: 60px;
+	text-align: center;
+}
+
+
+/*.setting a{
+	background-color: pink;
+	color: white;
+	padding: 10px 12px;
+	text-decoration: none;
+	border-radius: 10px;
+	font-family: arial;
+	font-weight: 550;	
+	display: inline-block;
+}*/
+
+
+
+a {
+  outline-color: transparent;
+}
+
+a:link {
+  color: black;
+  
+}
+
+a:visited {
+  color: blue;;
+ 
+}
+
+a:focus {
+  text-decoration: none;
+  background-color: green;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: orange;
+}
+
+a:active {
+  background-color: yellow;
+  color: purple;
+}
+
+a[target=_blank]::after {
+  content: "";
+  display: inline-block;
+  width: 2.0em;
+  height: 2.0em;
+  margin-left: 0.25em;
+
+  background-size: 100%;
+  background-image: url(externalLinkGraphic.png);
+  background-repeat: no-repeat;
+  
+   }
+
+@media(max-width: 600px) {
+
+	h2 {
+		color: darkblue;
+		background-attachment: tan;
+		font-family: arial;
+		}		
+}
+
+.setting {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;	
+	border: 2px dashed purple;
+	background-color: #bbb;
+	height: 3em;
+	padding: 10px;	
+	}
+	
+	.toggle {		
+		display: none;
+	}
+	
+	.toggle-lbl{
+		width: 75px;
+		height: 50px;
+		background: #655;
+		border-radius: 50px;
+		position: relative;
+		display: flex;
+		align-items:center;
+		cursor: pointer;
+		transition: background 0.3s ease;
+		
+	}
+	.toggle-lbl::before{
+		content: "";
+		width: 40px;
+		height: 35px;
+		background: white;
+		border-radius: 50%;
+		position: absolute;
+		left: 9px;
+		transition: transform 0.3s ease;
+		
+	}
+	.toggle:checked .toggle-lbl {
+		background: orange;
+	}
+	
+	.toggle:checked + .toggle-lbl::before{
+		
+		transform: translateX(40px);
+	}
+	
+
