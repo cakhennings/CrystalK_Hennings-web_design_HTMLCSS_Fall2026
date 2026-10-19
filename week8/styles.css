@@ -1,0 +1,78 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    color:blue;
+    background-color:navajowhite;
+    font-size: 18px;
+    
+}
+#mainDiv{
+    width: 990px;
+    height: 770px;
+    background-color:lightgray;
+    border: 3px 5px 3px 4px dashed;   
+    border-style: outset;
+    border-color: darkblue;
+    margin-left: auto;
+    margin-right: auto;   
+    
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 4px 4px 7px #111111;
+}
+nav{  
+    padding: 2px;
+    margin: 1px;    
+ 
+}
+li{
+        display: inline;
+        margin: right;
+
+}
+.product-card{
+    background-color:rgb(243, 229, 243);
+    border-width: 100px;
+    border: 4px darkblue;
+    border-style:groove;
+    padding: 17px;
+    margin: 10px 6px;
+    box-shadow: .8rem .10rem .4rem  darkslateblue;
+    border-radius: 1em 4em 1em 4em;
+    display: inline-block;    
+}
+
+.product-card:hover{
+    position: relative;
+    top: .3rem;
+    left: .5rem;
+    background-color: greenyellow;
+    border-color: orangered;
+    border-width: 6px;
+    padding: 20px;
+    
+}
+
+div1{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2{
+    font-style: italic;
+    text-shadow: 2px 2px 7px #111111;
+}
+
+footer{
+    background-color: chartreuse;
+    height: 20px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
