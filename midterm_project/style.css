@@ -1,0 +1,149 @@
+﻿:root {
+    --primaryBackgroundClr: gray;
+    --headerTextColor: pink;
+    --secondaryHeaderTextColor: midnightblue;
+    --secondaryBGClr: darkgray;
+    --textColor: purple;
+    --headerBckgrndColor: greenyellow;
+    --anchorButtonBGColor: skyblue;
+    --fontFamilyHeader1: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --fontFamilyMobile: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --footerSize: 14px;
+    --linkStatus_LinkColor: red;
+    --linkStatus_VisitedColor: olivegreen;
+    --linkStatus_HoverColor: purple;
+    --linkStatus_ActiveColor: magenta;
+    --bodyBGColor: #f1f1f1;
+    --textShadowColor: black;
+}
+
+body
+{
+    font-family:var(--fontFamilyMobile);
+    background-color: var(--bodyBGColor);
+    padding-bottom:20px;    
+}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+h1 {
+    font-size: 2.7rem;
+    color: var(--headerTextColor);
+    background-color: var(--primaryBackgroundClr);
+    text-align:center;
+    margin-top:0px;
+    padding:1.45rem;
+    width:100%
+}
+h2 {
+    font-size: 1.2rem;
+    color: var(--headerTextColor);
+    background-color: var(--secondaryBGClr);
+    text-align: center;
+    padding: .2rem;
+    text-shadow: .6em .7em .3em var(--textShadowColor);
+}
+.projTitle {
+    font-size: 1.3rem;
+    background-color: var(--bodyBGColor);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--textColor);
+    padding: .1rem .3rem .2rem 1.4rem;  
+}
+
+.mainDiv{
+    margin:0 0.5rem;
+    background-color:var(--bodyBGColor);
+    height:50rem;    
+}
+.mainDiv p{
+    line-height:1.5;    
+    font-size:.4rem;
+    padding:.6rem .2rem .2rem 1.2rem;    
+}
+
+.mainNav{
+    padding: .1rem 1.2rem;
+    margin: 0 1.3rem;
+    overflow: auto;
+}
+
+.mainNav ul{
+    list-style-type: none;    
+}
+   .mainNav a {
+        float: none;
+        display: block;
+        width: 100%;
+        font-weight: 900;
+        font-size: .5rem;
+        letter-spacing: 1.5px;
+        text-transform:uppercase;
+        text-decoration:none;       
+    }
+
+a:link{
+    color: var(--linkStatus_LinkColor);
+}
+a:visited{
+    color: var(--linkStatus_VisitedColor);
+}
+a:hover{
+    color: var(--linkStatus_HoverColor);
+    text-decoration:underline;
+    background-color: var(--anchorButtonBGColor);
+}
+a:visited{
+    color:var(--linkStatus_VisitedColor);
+}
+    
+.mainDiv p{
+    line-height:1.5rem;
+}
+img{
+    max-width:11%;
+    height:auto;
+    display:block;
+    border-radius:130px 130px;
+    margin-top:12px;
+    margin:auto;
+}
+
+footer {
+    padding: 2px;
+    background-color: var(--secondaryBGClr);
+    font-size: var(--footerSize);
+    text-align:center;
+    width:100%;
+    position:fixed;
+}
+
+@media(min-width:900px){
+
+    h1{
+        font-family:var(--fontFamilyHeader1);
+    }
+    .mainDiv p{
+        font-size:1.5rem;
+        padding: .3rem .3rem .2rem 1.5rem;
+    }
+    h2{ 
+        font-size: 2.2rem;
+    }
+    .mainNav a {
+        float: left;
+        display: block;
+        width: 33%;
+        font-size: 1.6rem;
+        letter-spacing: 2.1px;            
+    }
+    footer{
+        font-size:10px;
+        position:fixed;
+        bottom:0;
+        width:100%;
+        text-align:center;       
+    }
+}
