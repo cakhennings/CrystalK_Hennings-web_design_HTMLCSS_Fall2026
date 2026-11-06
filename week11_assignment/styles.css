@@ -1,0 +1,117 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body
+{
+}
+table{
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+}
+
+table, tr, td, th{
+    border: 1.5px solid gray;    
+}
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+th,td{
+    padding: .5em;
+}
+
+.tableContainer{
+    overflow-x:auto;
+    box-shadow: 8px 8px 8px blue;
+    width:100%;
+    margin-left:5px;
+}
+
+td{
+    text-align:center;
+}
+th{
+    font-size:1.25rem;
+}
+caption{
+    text-transform:uppercase;
+    padding:.7em;
+    color:purple;
+    border: 2px groove blue;
+    background-color: #f1f1f1;
+    font-size:1.6em;
+}
+tbody tr:nth-child(2n+1){
+    background-color:lightgray;
+}
+tbody tr:nth-child(even){
+    background-color:#f1f1f1;
+}
+
+thead tr, tfoot{ background-image:url("backgroundCrissCross.jpg");
+}
+
+thead tr:nth-child(2n+1) {
+    background-color: lightgray;
+}
+
+thead tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+td.summary:hover {
+    color: darkviolet;
+    transform: scale(5);
+    transition: transform 5s;
+    transform: rotate(20deg 30deg 20deg) translate(20px 20px);
+}
+
+tfoot{
+    background-color:lightgray;
+    border-top:2px;
+    font-size:20px;   
+}
+tfoot td:hover{
+    color:forestgreen;
+    transform:scale(3.5) rotate(360deg);
+    transition:transform 5s; 
+    transform:translate(20px 20px);    
+}
+.color{
+    background-color:cornflowerblue;
+}
+
+@media (max-width:730px){
+
+    table{
+        width:100%;
+    }
+     table,thead,tbody,th,tr, td, tfoot, caption{
+        display:block;
+    }
+     th, caption{
+         font-size:15px;
+     }
+     thead tr{
+         position:absolute;
+         top:-9999px;
+         left:-9999px;
+     }
+     
+     tr{
+         margin-bottom:15px;
+         border: 1px solid purple;
+        }
+
+     td{
+         border:1px solid black;
+         position:relative;
+         padding-left:50%;
+     }
+   
+}
